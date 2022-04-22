@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 public class Main {
 
     public static String fullName;
-    public static int contactNumber;
+    public static int contactDetails;
     public static double price;
     public static double fullPrice = 0;
     
@@ -31,5 +31,18 @@ public class Main {
 
     public static void main(String[] args){
         
+    }
+
+    public void getFullName() {
+        fullName = JOptionPane.showInputDialog(null, "Please Enter Your Full Name");
+        mc.setFullName(fullName);
+    }
+
+    public void getContactInfo() {
+        contactDetails = Integer.valueOf(JOptionPane.showInputDialog(null, "Please Enter Your Contact Number"));
+        mc.setContactInfo(contactDetails);
+    }
+
+    public void getFood() {
     }
 }
